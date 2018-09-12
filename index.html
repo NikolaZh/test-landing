@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code-Artel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./arrow.css">
+</head>
+
+<body>
+    <main>
+        <section id="prime">
+            <h1>Code Artel</h1>
+            <a href="#contacts" class="contact__link">Связаться с нами</a>
+            <a href="#work-cycle">
+                <div class="elipse"><span class="arrow"></span></div>
+            </a>
+        </section>
+
+        <section id="work-cycle">
+            <div class="container">
+                <div class="left-block">
+                    <div class="content directions">
+                        <div class="direction">
+                            <div class="direction__logo"><img src="img/icon-web.svg"></div>
+                            <div class="direction__info">
+                                <h2>WEB</h2>
+                                <p>Разработка гибких web-решений с широкими функциональными возможностями</p>
+                            </div>
+                        </div>
+                        <div class="direction">
+                            <div class="direction__logo"><img src="img/icon-mobile.svg"></div>
+                            <div class="direction__info">
+                                <h2>MOBILE</h2>
+                                <p>Разработка мобильных приложений</p>
+                            </div>
+                        </div>
+                        <div class="direction">
+                            <div class="direction__logo"><img src="img/icon-blockchain.svg"></div>
+                            <div class="direction__info">
+                                <h2>BLOCKCHAIN</h2>
+                                <p>Разработка блокчейн-проектов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <div class="content cycles">
+                        <h2>Полный цикл разработки</h2>
+                        <p>Работа над проектом состоит из 6 этапов: заявка, согласование, реализация, сдача, поддержка, развитие.</p>
+                        <div><img src="img/icon-setting.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <div class="right-block contacts">
+                    <img src="img/icon-arrows.svg">
+                    <div class="contacts__phone"><img src="./img/icon-phone.svg">
+                        <p>+7 777 777 77 77</p>
+                    </div>
+                    <div class="contacts__email"><img src="./img/icon-email.svg">
+                        <p>code-artel@yandex.ru</p>
+                    </div>
+                </div>
+                <div class="left-block formblock">
+                    <form>
+                        <h2>Связаться с нами</h2>
+                        <input type="text" placeholder="Контактное лицо" class="form__input-line">
+                        <input type="tel" placeholder="Телефон" class="form__input-line">
+                        <input type="textarea" placeholder="Ваше сообщение" class="form__message">
+                        <div>
+                            <input type="checkbox" id="political">
+                            <label for="political">Отправляя данную форму, Вы соглашаетесь с политикой конфиденциальности</label>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
