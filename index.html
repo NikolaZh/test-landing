@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code-Artel</title>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./arrow.css">
@@ -63,10 +64,14 @@
                 <div class="right-block contacts">
                     <img src="img/icon-arrows.svg">
                     <div class="contacts__phone"><img src="./img/icon-phone.svg">
-                        <p>+7 777 777 77 77</p>
+                        <a href="tel:+79046010503">
+                            <p>+7 904 6010503</p>
+                        </a>
                     </div>
                     <div class="contacts__email"><img src="./img/icon-email.svg">
-                        <p>code-artel@yandex.ru</p>
+                        <a href="mailto:peter.uspenskii@gmail.com">
+                            <p>peter.uspenskii@gmail.com</p>
+                        </a>
                     </div>
                 </div>
                 <div class="left-block formblock">
@@ -75,11 +80,11 @@
                         <input type="text" placeholder="Контактное лицо" class="form__input-line">
                         <input type="tel" placeholder="Телефон" class="form__input-line">
                         <input type="textarea" placeholder="Ваше сообщение" class="form__message">
-                        <div>
-                            <input type="checkbox" id="political">
+                        <div onclick="agreeForm(this.form)">
+                            <input type="checkbox" name="political" id="political">
                             <label for="political">Отправляя данную форму, Вы соглашаетесь с политикой конфиденциальности</label>
                         </div>
-                        <button type="submit">Отправить</button>
+                        <button type="submit" name="submit" disabled>Отправить</button>
                     </form>
                 </div>
             </div>
